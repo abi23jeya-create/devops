@@ -3,6 +3,9 @@ name: imple CI pipeline
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 
 jobs:
   build:
@@ -23,9 +26,3 @@ jobs:
 
     - name: Pipeline Break
       run: echo "pipeline start again"
-
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]      
