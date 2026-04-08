@@ -27,8 +27,7 @@ jobs:
     - name: Pipeline Break
       run: echo "pipeline start again"
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]      
+    - name: Build Docker Image
+      run: docker build -t devops .  
+
+     
