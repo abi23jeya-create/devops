@@ -16,7 +16,7 @@ jobs:
       packages: write
    
 
-   steps:
+    steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
@@ -44,4 +44,5 @@ jobs:
     - name: Docker push
       run: docker push ghcr.io/${{github.actor}}/devops:v1   
 
+     
      
